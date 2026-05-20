@@ -13,5 +13,6 @@
 /thinking-machines-software-engineer-data-infrastructure/
 
 # Local render/cache artifacts.
+dist/
 __pycache__/
 *.pyc

@@ -35,7 +35,7 @@
   </defs>
 
   <rect width="1200" height="420" fill="url(#bg)"/>
-  <text x="600" y="54" text-anchor="middle" class="title">resume-ai accelerates grounded resume tailoring</text>
+  <text x="600" y="54" text-anchor="middle" class="title">Resume AI accelerates grounded resume tailoring</text>
   <text x="600" y="80" text-anchor="middle" class="small">Works with Cursor, Codex, Gemini, and other coding agents while keeping claims tied to a confirmed profile.</text>
 
   <path class="line arrow" d="M330 214 C398 188 430 188 494 214"/>

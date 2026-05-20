@@ -10,9 +10,10 @@ This repo keeps one editable source resume plus role-specific variants for appli
 - `resume.html` - private/local canonical resume source, ignored by git
 - `sample-profile.md` - public sample profile inventory
 - `PROFILE.md` - private/local broader source of truth for confirmed skills, projects, tools, and context, ignored by git
+- `render_pdf.py` - shared renderer for converting resume HTML files into verified one-page PDFs
+- `requirements.txt` - Python dependencies for PDF rendering
 - `applications.md` - table of jobs applied to and the tailored resume used
 - `<company>-<job-title>/resume.html` - role-specific resume variant
-- `<company>-<job-title>/render_pdf.py` - PDF renderer for that variant
 - `<company>-<job-title>/resume.pdf` - final PDF used for the application
 
 ## Process
@@ -81,16 +82,21 @@ This repo uses Python plus Playwright to render HTML resumes to PDF because Chro
 Example:
 
 ```powershell
-cd .\ibm-software-engineer
-python .\render_pdf.py
+python .\render_pdf.py .\ibm-software-engineer\resume.html
 ```
 
-Each render script should:
+The shared render script should:
 
 - Load the local HTML file
 - Print to letter-size PDF
 - Use the page's print CSS
 - Verify the final PDF page count is exactly `1`
+
+Install dependencies with:
+
+```powershell
+python -m pip install -r requirements.txt
+```
 
 ## Application Tracking
 

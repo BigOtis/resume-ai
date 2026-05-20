@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phillip Lopez - Resume</title>
+  <style>
+    :root {
+      --page-width: 8.5in;
+      --page-height: 11in;
+      --page-padding-x: 0.42in;
+      --page-padding-y: 0.30in;
+      --text-color: #111;
+      --muted-text: #454545;
+      --accent: #214b63;
+      --rule: #cfd8de;
+      --font-size: 11.1pt;
+      --line-height: 1.16;
+      --section-gap: 0.17in;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: #ececec;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text-color);
+      font-family: "Times New Roman", Times, serif;
+      font-size: var(--font-size);
+      line-height: var(--line-height);
+    }
+
+    .page {
+      width: min(100%, var(--page-width));
+      min-height: var(--page-height);
+      margin: 0 auto;
+      padding: var(--page-padding-y) var(--page-padding-x);
+      background: #fff;
+      box-shadow: 0 0 0.12in rgba(0, 0, 0, 0.12);
+    }
+
+    header {
+      margin-bottom: 0.18in;
+      padding-bottom: 0.10in;
+      border-bottom: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    h1,
+    h2,
+    p,
+    ul {
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 0.03in;
+      color: #0f1720;
+      font-size: 19pt;
+      line-height: 1.05;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 0.035in;
+      color: var(--accent);
+      font-size: 12pt;
+      line-height: 1.05;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.08em;
+    }
+
+    a:hover {
+      color: #163444;
+    }
+
+    .contact-line,
+    .links-line {
+      font-size: 11.4pt;
+    }
+
+    .contact-line {
+      color: var(--muted-text);
+    }
+
+    .links-line {
+      margin-top: 0.025in;
+      font-size: 10.9pt;
+    }
+
+    section + section {
+      margin-top: var(--section-gap);
+    }
+
+    .job + .job {
+      margin-top: 0.14in;
+    }
+
+    .job-title,
+    .school {
+      color: #171717;
+      font-weight: 700;
+    }
+
+    .job-title {
+      margin-bottom: 0.02in;
+    }
+
+    ul {
+      margin-top: 0.03in;
+      padding-left: 0.22in;
+    }
+
+    li {
+      margin: 0.01in 0;
+      padding-left: 0.01in;
+    }
+
+    li::marker {
+      color: var(--accent);
+    }
+
+    .project-list {
+      margin-top: 0.02in;
+    }
+
+    .skills-line + .skills-line {
+      margin-top: 0.01in;
+    }
+
+    strong {
+      color: #171717;
+    }
+
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    @media print {
+      :root {
+        --page-padding-y: 0.27in;
+        --font-size: 10.9pt;
+        --line-height: 1.13;
+        --section-gap: 0.15in;
+      }
+
+      html {
+        background: #fff;
+      }
+
+      .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+      }
+
+      header {
+        margin-bottom: 0.16in;
+        padding-bottom: 0.08in;
+      }
+
+      .job + .job {
+        margin-top: 0.12in;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        min-height: 100vh;
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Phillip Lopez</h1>
+      <p class="contact-line">845-326-7940 | phil.lopezdev@gmail.com</p>
+      <p class="links-line">
+        <a href="https://www.robot-future.com/">Blog</a> |
+        <a href="https://www.linkedin.com/in/phil-lopez-84577b64/">LinkedIn</a> |
+        <a href="https://github.com/BigOtis">GitHub</a> |
+        <a href="https://projectempire.robot-future.com/">Personal Projects</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>At a High Level:</h2>
+      <p>
+        Software engineer and technical leader with 10+ years of experience building AI infrastructure,
+        developer tooling, debugging platforms, and enterprise automation systems at IBM. Automation-first builder who
+        constantly experiments with new tools through personal projects, looks for ways to eliminate manual toil, and
+        turns repeated workflows into reusable systems.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience:</h2>
+
+      <article class="job">
+        <p class="job-title">AI / ML Software Engineer - IBM | 2024 - Present</p>
+        <ul>
+          <li>Led infrastructure and automation initiatives for the Machine Learning for z/OS platform, enabling enterprise AI/ML deployment workflows on IBM zSystems.</li>
+          <li>Developed and maintained AI infrastructure pipelines leveraging Docker, Apache Spark, and Red Hat OpenShift to support scalable model deployment, testing, orchestration, and enterprise integration workflows.</li>
+          <li>Built RESTful APIs and backend services that supported ML for z/OS automation, integration, and developer workflows.</li>
+          <li>Architected AI-assisted Jenkins automation systems that reduced manual debugging and validation effort across the ML for z/OS development lifecycle.</li>
+          <li>Delivered infrastructure and deployment workflows that integrated Telum II and Spyre on-chip AI acceleration technologies to enable production-grade enterprise inference capabilities.</li>
+          <li>Mentored team members and drive adoption of AI-assisted engineering workflows, including custom MCP tooling and developer automation systems.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <p class="job-title">z/OS, Docker and OpenShift Support - IBM Account Engineer | 2015 - 2024</p>
+        <ul>
+          <li>Led high-severity enterprise incident investigations involving z/OS, Docker, and OpenShift environments, collaborating directly with engineering teams and enterprise leadership to rapidly diagnose and resolve production-critical failures.</li>
+          <li>Owned on-call rotations and designed automation for scheduling, callouts, and escalation workflows to improve operational responsiveness.</li>
+          <li>Built monitoring and alerting automation, including custom Slack bots, and supported Grafana-based observability workflows for zCX environments.</li>
+          <li>Founded and led development of WebIPCS, a modern debugging and observability platform built on top of IBM IPCS that improved usability, visualization, workflow efficiency, and AI-assisted diagnostic analysis for complex enterprise dump debugging.</li>
+          <li>Created and drove the Analysis on Arrival (AOA) initiative, introducing automated diagnostic artifact generation and AI-assisted debugging workflows that reduced manual analysis effort and accelerated issue resolution across support and engineering teams.</li>
+          <li>Architected and implemented Python tooling that exposed complex z/OS diagnostic data in structured AI-consumable formats, with portions of the work later open sourced as pyipcs.</li>
+          <li>Partnered directly with enterprise customers to identify novel production issues, develop mitigation strategies, and improve long-term product reliability through tooling and process improvements.</li>
+          <li>Identified gaps in existing support and debugging workflows and designed internal tools and automation systems to improve issue triage, investigation speed, and customer outcomes.</li>
+          <li>Led support innovation initiatives that codified institutional knowledge, automated repetitive workflows, and improved escalation handling efficiency across global support teams.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="personal-projects">
+      <h2>Personal Projects:</h2>
+      <ul class="project-list">
+        <li>MCP Based Blogging Framework: <a href="https://www.robot-future.com/article/69e8284090457dba8223b433">https://www.robot-future.com/article/69e8284090457dba8223b433</a></li>
+        <li>UE5 LLM Local Chat Plugin: <a href="https://github.com/BigOtis/LocalTalker">https://github.com/BigOtis/LocalTalker</a></li>
+        <li>Project Empire: <a href="https://projectempire.robot-future.com">https://projectempire.robot-future.com</a> - built significantly with Cursor</li>
+        <li>Indie Tower Defense Game in UE5: <a href="https://store.steampowered.com/app/1316530/Busters_TD">https://store.steampowered.com/app/1316530/Busters_TD</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education:</h2>
+      <p class="school">Rochester Institute of Technology - Rochester, NY</p>
+      <p>Bachelor of Science and Master of Science in Computer Science | May 2017 | GPA: 3.83 - Dean's List</p>
+    </section>
+
+    <section>
+      <h2>Skills:</h2>
+      <p class="skills-line"><strong>Programming Languages:</strong> JavaScript, TypeScript, Python, SQL, Node.js, React, MongoDB, C#, C, Java, Scala</p>
+      <p class="skills-line"><strong>Software Expertise:</strong> Codex, Cursor, OpenAI APIs, LLMs, Llama.cpp, Jupyter, Apache Spark, RESTful APIs, VSCode, Docker, OpenShift/Kubernetes, Jenkins, Grafana, IBM Cloud, GitHub, AWS, Tailwind CSS, Unreal Engine, Distributed Systems, Open Source, Security</p>
+    </section>
+  </main>
+</body>
+</html>

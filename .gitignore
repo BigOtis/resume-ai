@@ -1,0 +1,15 @@
+# Application-specific resumes and PDFs are private/local.
+/applications.md
+/baseten-software-engineer-ai-enablement/
+/blue-origin-software-developer-iii-ai-ml/
+/coreweave-senior-software-engineer-experiment-insights/
+/cursor-software-engineer-user-operations/
+/databricks-staff-software-engineer-fullstack/
+/google-software-engineer-iii-aiml-genai/
+/grafana-labs-observability-architect/
+/modal-member-technical-staff-platform-engineering/
+/thinking-machines-software-engineer-data-infrastructure/
+
+# Local render/cache artifacts.
+__pycache__/
+*.pyc

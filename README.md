@@ -6,7 +6,8 @@ This repo keeps one editable source resume plus role-specific variants for appli
 
 ## Core Files
 
-- `resume.html` - canonical resume source
+- `sample-resume.html` - public sample resume source
+- `resume.html` - private/local canonical resume source, ignored by git
 - `PROFILE.md` - broader source of truth for confirmed skills, projects, tools, and context
 - `applications.md` - table of jobs applied to and the tailored resume used
 - `<company>-<job-title>/resume.html` - role-specific resume variant

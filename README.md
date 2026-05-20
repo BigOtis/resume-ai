@@ -1,4 +1,4 @@
-# resume-ai
+# Resume AI, Claude Code For Getting Jobs
 
 ![resume-ai workflow animation](assets/resume-ai-workflow.svg)
 

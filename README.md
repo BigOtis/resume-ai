@@ -1,7 +1,5 @@
 # resume-ai
 
-![resume-ai product overview](assets/resume-ai-hero.png)
-
 ![resume-ai workflow animation](assets/resume-ai-workflow.svg)
 
 This repo keeps one editable source resume plus role-specific variants for applications.

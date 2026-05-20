@@ -2,7 +2,7 @@
 
 ![resume-ai workflow animation](assets/resume-ai-workflow.svg)
 
-This repo keeps one editable source resume plus role-specific variants for applications.
+Automatically and accurately tailor your resume to specific job roles based on your real skills.
 
 ## Core Files
 

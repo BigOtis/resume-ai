@@ -103,8 +103,3 @@ This keeps a clear record of:
 - Which resume version was submitted
 - What wording was used for each application
 
-## Recommended Future Improvements
-
-- Add a short notes column to `applications.md` for status, recruiter contact, or follow-up date
-- Add a shared script if the PDF rendering flow becomes identical across many resume variants
-- Add PDF filenames with dates if multiple submissions are made for the same role

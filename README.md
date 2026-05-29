@@ -26,7 +26,7 @@ Automatically and accurately tailor your resume to specific job roles based on y
 6. Review `PROFILE.md` for confirmed context that may be relevant but is not visible in the one-page resume.
 7. Review each job listing and identify the requirements that are genuinely supported by existing experience.
 8. Ask a few targeted questions for each job to uncover missing but truthful details that would improve the tailored resume.
-9. If those answers reveal new confirmed skills, tools, projects, metrics, or work history, add them to `PROFILE.md`.
+9. If those answers reveal new confirmed skills, tools, projects, metrics, work history, or useful application-answer anecdotes, add them to `PROFILE.md`.
 10. Create a new subdirectory named for the company and role, then copy the resume into that folder as the tailored version.
 11. Adjust wording, ordering, and emphasis to better match the posting while keeping every claim factually supported.
 12. Add a row to `applications.md` with the company, role, posting URL, application date, and tailored resume path.
@@ -44,6 +44,7 @@ When starting work in this repo, the agent should first determine which mode app
 - If job links are provided, use the links as the source of truth and tailor from there.
 - For each job, ask a few high-signal questions before finalizing the tailored resume when the listing values experience that is not already clear from `PROFILE.md`.
 - Add newly confirmed answers to `PROFILE.md` before using them in a resume.
+- When the user drafts application-question answers, preserve the cleaned-up anecdote, project context, decision rationale, and impact in `PROFILE.md` for reuse.
 - If a job listing is unavailable, closed, or unreadable, tell the user and avoid creating a speculative tailored resume unless they provide the listing text.
 
 ## Grounding Rules
@@ -53,7 +54,7 @@ When starting work in this repo, the agent should first determine which mode app
 - Ask for clarification when a posting values experience that is not already documented.
 - Keep the canonical resume broadly accurate and stable; use job-specific folders for targeted variants.
 - When a fact should apply everywhere, update both the canonical resume and any relevant tailored copies.
-- When the user confirms new information about their skills, tools, projects, metrics, or work history, add it to `PROFILE.md` so future tailoring can use it.
+- When the user confirms new information about their skills, tools, projects, metrics, work history, or application-story anecdotes, add it to `PROFILE.md` so future tailoring can use it.
 - Treat `PROFILE.md` as inclusive and long-form; treat each resume as a focused one-page artifact.
 
 ## Tailoring Guidelines
